@@ -57,6 +57,8 @@
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .nav-link:hover {
@@ -69,9 +71,46 @@
   background: rgba(0, 120, 212, 0.1);
 }
 
+.login-link {
+  background: linear-gradient(135deg, #0078d4 0%, #106ebe 100%);
+  color: white !important;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.login-link:hover {
+  background: linear-gradient(135deg, #106ebe 0%, #005a9e 100%);
+  color: white !important;
+  transform: translateY(-1px);
+}
+
 .nav-mobile {
   display: none;
   position: relative;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mobile-login-button {
+  background: linear-gradient(135deg, #0078d4 0%, #106ebe 100%);
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.mobile-login-button:hover {
+  background: linear-gradient(135deg, #106ebe 0%, #005a9e 100%);
+  transform: translateY(-1px);
+}
+
+.mobile-login-button.active {
+  background: white;
+  color: #0078d4;
 }
 
 .menu-toggle {
@@ -124,6 +163,7 @@
   transition: all 0.2s ease;
   text-align: left;
   margin-bottom: 2px;
+  text-decoration: none;
 }
 
 .mobile-nav-link:hover {
@@ -155,6 +195,6 @@
   }
   
   .nav-mobile {
-    display: block;
+    display: flex;
   }
 }

@@ -1,45 +1,65 @@
 import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import './TopBar.css'
 
-const TopBar = ({ currentPage, onNavigate }) => {
+const TopBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const location = useLocation()
 
   const menuItems = [
-    { id: 'home', label: 'Inicio' },
-    { id: 'services', label: 'Servicios' },
-    { id: 'about', label: 'Acerca de' },
-    { id: 'login', label: 'Iniciar sesión' }
+    { path: '/', label: 'Inicio' },
+    { path: '/servicios', label: 'Servicios' },
+    { path: '/acerca-de', label: 'Acerca de' }
   ]
 
-  const handleNavigation = (pageId) => {
-    onNavigate(pageId)
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  const handleMenuClose = () => {
     setIsMenuOpen(false)
   }
 
   return (
     <header className="topbar">
       <div className="topbar-container">
-        <div className="topbar-logo" onClick={() => handleNavigation('home')}>
+        <Link to="/" className="topbar-logo" onClick={handleMenuClose}>
           <h1>TopDriver</h1>
-        </div>
+        </Link>
         
         <nav className={`topbar-nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <div className="nav-desktop">
             {menuItems.map((item) => (
-              <button
-                key={item.id}
-                className={`nav-link ${currentPage === item.id ? 'active' : ''}`}
-                onClick={() => handleNavigation(item.id)}
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                onClick={handleMenuClose}
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
+            <Link
+              to="/iniciar-sesion"
+              className={`nav-link login-link ${location.pathname === '/iniciar-sesion' ? 'active' : ''}`}
+              onClick={handleMenuClose}
+            >
+              Iniciar sesión
+            </Link>
           </div>
           
           <div className="nav-mobile">
+            <Link
+              to="/iniciar-sesion"
+              className={`mobile-login-button ${location.pathname === '/iniciar-sesion' ? 'active' : ''}`}
+              onClick={handleMenuClose}
+            >
+              Iniciar sesión
+            </Link>
+            
             <button 
               className="menu-toggle"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={handleMenuToggle}
             >
               <span className="menu-icon">{isMenuOpen ? '✕' : '☰'}</span>
             </button>
@@ -47,13 +67,14 @@ const TopBar = ({ currentPage, onNavigate }) => {
             {isMenuOpen && (
               <div className="mobile-menu">
                 {menuItems.map((item) => (
-                  <button
-                    key={item.id}
-                    className={`mobile-nav-link ${currentPage === item.id ? 'active' : ''}`}
-                    onClick={() => handleNavigation(item.id)}
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className={`mobile-nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                    onClick={handleMenuClose}
                   >
                     {item.label}
-                  </button>
+                  </Link>
                 ))}
               </div>
             )}
