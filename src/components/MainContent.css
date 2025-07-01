@@ -76,8 +76,8 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -200,8 +200,8 @@
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: translateY(0);
   animation: slideInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.8s forwards;
 }
 
@@ -294,8 +294,8 @@
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -351,8 +351,8 @@
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2.5rem;
   margin-bottom: 4rem;
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -391,8 +391,8 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
-  opacity: 0;
-  transform: translateY(30px) scale(0.95);
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 .service-card-glow {
@@ -539,8 +539,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -578,8 +578,8 @@
   position: relative;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-  transform: translateY(20px) scale(0.9);
+  opacity: 1;
+  transform: translateY(0) scale(1);
   animation: floatingMotion 6s ease-in-out infinite;
 }
 
@@ -665,8 +665,8 @@
   align-items: center;
   position: relative;
   z-index: 2;
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
