@@ -1,0 +1,334 @@
+.about-page {
+  flex: 1;
+  background: #1a1a1a;
+  color: #e0e6ed;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-hero {
+  padding: 4rem 0;
+  text-align: center;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #e0e6ed;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  color: #b3b3b3;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-mission {
+  padding: 4rem 0;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.mission-card {
+  background: #242424;
+  border: 1px solid #2d2d2d;
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.mission-card:hover {
+  border-color: #0078d4;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 120, 212, 0.15);
+}
+
+.mission-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.mission-card h3 {
+  color: #e0e6ed;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.mission-card p {
+  color: #b3b3b3;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.about-story {
+  padding: 4rem 0;
+  border-top: 1px solid #2d2d2d;
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.story-text h2 {
+  color: #e0e6ed;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.story-text p {
+  color: #b3b3b3;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.story-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: #242424;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0078d4;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #b3b3b3;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.about-team {
+  padding: 4rem 0;
+  border-top: 1px solid #2d2d2d;
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.team-header h2 {
+  color: #e0e6ed;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.team-header p {
+  color: #b3b3b3;
+  font-size: 1.125rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  background: #242424;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.team-member:hover {
+  border-color: #404040;
+  transform: translateY(-2px);
+}
+
+.member-avatar {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.team-member h4 {
+  color: #e0e6ed;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.member-role {
+  color: #0078d4;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.member-bio {
+  color: #b3b3b3;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.about-commitment {
+  padding: 4rem 0;
+  border-top: 1px solid #2d2d2d;
+}
+
+.commitment-content h2 {
+  color: #e0e6ed;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.commitment-item {
+  background: #1e1e1e;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.commitment-item:hover {
+  border-color: #404040;
+  transform: translateY(-2px);
+}
+
+.commitment-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.commitment-item h4 {
+  color: #e0e6ed;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.commitment-item p {
+  color: #b3b3b3;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 0 0.75rem;
+  }
+  
+  .about-hero {
+    padding: 2rem 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.125rem;
+  }
+  
+  .about-mission {
+    padding: 2rem 0;
+  }
+  
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .mission-card {
+    padding: 2rem;
+  }
+  
+  .about-story {
+    padding: 2rem 0;
+  }
+  
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .story-text h2 {
+    font-size: 2rem;
+  }
+  
+  .story-text p {
+    font-size: 1rem;
+  }
+  
+  .story-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    padding: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .about-team {
+    padding: 2rem 0;
+  }
+  
+  .team-header h2 {
+    font-size: 2rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .about-commitment {
+    padding: 2rem 0;
+  }
+  
+  .commitment-content h2 {
+    font-size: 2rem;
+  }
+  
+  .commitment-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
